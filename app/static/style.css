@@ -24,7 +24,9 @@ body {
   /* Declare heights because of positioning of img element */
   .carousel-item {
     height: 32rem;
+    text-shadow: 1px 2px #777;
   }
+
   .carousel-item > img {
     position: absolute;
     top: 0;
@@ -33,7 +35,38 @@ body {
     height: 32rem;
     object-fit: cover;
   }
-  
+
+  @media (max-width: 768px) {
+    .carousel-item {
+      height: 12rem;
+    }
+
+    .carousel-item > img {
+        height: 12rem;
+    }
+
+    .carousel-item h1 {
+        font-size: 2rem;
+    }
+    
+    .carousel-item h3 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption {
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        display: none;
+    }
+    
+    .tab-pane {
+      padding-top: 2rem;
+    }
+}
   
   /* MARKETING CONTENT
   -------------------------------------------------- */
