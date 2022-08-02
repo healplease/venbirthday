@@ -102,36 +102,6 @@
                 </div>
             {% endfor %}
           </div>
-
-          <!-- <hr class="featurette-divider">
-
-          <h1 class="display-4 text-center mb-5">Галерея</h1>
-
-          <div class="row">
-            <div class="col-12">
-                <div id="myGallery" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      {% for item in gallery %}
-                          <li data-target="#myGallery" data-slide-to="{{ loop.index - 1 }}" class="with-img {% if loop.index == 1 %}active{% endif %}">
-                            <img src="{{ url_for('static', filename=item.img) }}" height="100">
-                          </li>
-                      {% endfor %}
-                    </ol>
-                    <div class="carousel-inner">
-                      {% for item in gallery %}
-                          <div class="carousel-item {% if loop.index == 1 %}active{% endif %}">
-                          <img src="{{ url_for('static', filename=item.img) }}" style="object-fit:contain;">
-                          <div class="container">
-                              <div class="carousel-caption text-left">
-                                  <h3>{{ item.title }}</h3>
-                              </div>
-                          </div>
-                          </div>
-                      {% endfor %}
-                    </div>
-                </div>
-            </div>
-          </div> -->
   
           <hr class="featurette-divider">
   
